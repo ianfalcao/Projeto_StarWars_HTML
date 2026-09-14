@@ -8,33 +8,35 @@
     <meta name="description" content="Pagina principal do Projeto" >
     <title>O Portal da Galáxia</title>
 </head>
-<body>
+<body id="top">
     <!-- Cabeçalho Principal -->
     <header>
         <h1> STAR WARS - Archive</h1>
-        <p>
-            <i>"Há muito tempo, em uma galáxia muito, muito distante..."</i>
-        </p>
-        <audio controls autoplay loop muted >
-            <source src="/audio/Trilhas Sonoras/Star Wars Main Theme.mp3" type="audio/mpeg">
+        <blockquote>
+            <p>Há muito tempo, em uma galáxia muito, muito distante...</p>
+        </blockquote>
+        <audio controls autoplay muted>
+            <source src="/audio/tema_principal.mp3" type="audio/mpeg">
+            Seu navegador não oferece suporte à reprodução de áudio.
         </audio>
         <hr>
     </header>
     
     <!-- Navegação entre páginas -->
-    <nav>
+    <nav aria-label="Menu principal">
         <h2>Navegação Galática</h2>
         <ul>
-            <li><a href="../main/index.html"><b>01. Inicio</b></a></li>
+            <li><a href="../main/index.html" aria-current="page">01. Início</a></li>
             <li><a href="../pages/cronologia.html">02. Cronologia</a></li>
             <li><a href="../pages/jedi.html">03. Ordem Jedi</a></li>
             <li><a href="../pages/sith.html">04. Registros Sith</a></li>
-            <li><a href="../pages/especies_droids.html">05. Naves e Veículos</a></li>
-            <li><a href="../pages/naves.html">06. Guia Planetário</a></li>
-            <li><a href="../pages/planetas.html">07. Espécies e Droids</a></li>
+            <li><a href="../pages/naves.html">05. Naves e Veículos</a></li>
+            <li><a href="../pages/planetas.html">06. Guia Planetário</a></li>
+            <li><a href="../pages/especies_droids.html">07. Espécies e Droids</a></li>
             <li><a href="../pages/midias.html">08. Guia de Mídias</a></li>
-            <li><a href="../pages/caçadores_rec.html">09. Guilda de Caçadores</a></li>
+            <li><a href="../pages/cacadores_rec.html">09. Guilda de Caçadores</a></li>
             <li><a href="../pages/recrutamento.html">10. Aliste-se</a></li>
+            <li><a href="../pages/faccoes.html">11. Facções</a></li>
         </ul>
     </nav>
     <hr>
@@ -45,7 +47,7 @@
             <article>
                 <h3>O Conflito Secular</h3>
                 <p>
-                    A história da galáxia é marcada pelo equilíbrio e pela discórdia entre dois lados de um campo de energia místico conhecido como <strong>A Força</strong>. 
+                    A história da galáxia é marcada pelo equilíbrio e pela discórdia entre dois lados de um campo de energia místico conhecido como <b>A Força</b>. 
                     De um lado, os <em>Jedi</em> buscam manter a paz, a harmonia e a justiça através do autocontrole e do Lado da Luz. 
                     Do outro, os <em>Sith</em> buscam o poder absoluto, movidos pela paixão, raiva e o Lado Sombrio.
                 </p>
@@ -71,31 +73,31 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>A Alta República</strong></td>
+                        <td><b>A Alta República</b></td>
                         <td>500 BBY – 100 BBY</td>
                         <td>Apogeu da Ordem Jedi e expansão para a Orla Exterior.</td>
                         <td>República Galáctica</td>
                     </tr>
                     <tr>
-                        <td><strong>A Queda dos Jedi</strong></td>
+                        <td><b>A Queda dos Jedi</b></td>
                         <td>32 BBY – 19 BBY</td>
                         <td>As Guerras Clônicas e o plano mestre de Darth Sidious.</td>
                         <td>República / Separatistas</td>
                     </tr>
                     <tr>
-                        <td><strong>A Era do Império</strong></td>
+                        <td><b>A Era do Império</b></td>
                         <td>19 BBY – 5 BBY</td>
                         <td>Reinado de terror do Imperador e caça aos sobreviventes Jedi.</td>
                         <td>Império Galáctico</td>
                     </tr>
                     <tr>
-                        <td><strong>A Era da Rebelião</strong></td>
+                        <td><b>A Era da Rebelião</b></td>
                         <td>5 BBY – 4 ABY</td>
                         <td>A Guerra Civil Galáctica e a destruição das Estrelas da Morte.</td>
                         <td>Império vs. Aliança Rebelde</td>
                     </tr>
                     <tr>
-                        <td><strong>A Nova República</strong></td>
+                        <td><b>A Nova República</b></td>
                         <td>5 ABY – 34 ABY</td>
                         <td>Reconstrução da democracia e novos desafios na Orla Exterior.</td>
                         <td>Nova República</td>
@@ -113,16 +115,16 @@
 
             <ul>
                 <li>
-                    <strong><a href="jedi.html">O Código Jedi:</a></strong> Conheça a filosofia que guia os protetores da paz galáctica.
+                    <b><a href="../pages/jedi.html">O Código Jedi:</a></b> Conheça a filosofia que guia os protetores da paz galáctica.
                 </li>
                 <li>
-                    <strong><a href="sith.html">A Regra de Dois:</a></strong> Descubra a doutrina secreta que manteve os Sith vivos nas sombras por milênios.
+                    <b><a href="../pages/sith.html">A Regra de Dois:</a></b> Descubra a doutrina secreta que manteve os Sith vivos nas sombras por milênios.
                 </li>
                 <li>
-                    <strong><a href="naves.html">Especificações de Naves:</a></strong> Dados técnicos detalhados da <em>Millennium Falcon</em> e dos <em>Star Destroyers</em>.
+                    <b><a href="../pages/naves.html">Especificações de Naves:</a></b> Dados técnicos detalhados da <em>Millennium Falcon</em> e dos <em>Star Destroyers</em>.
                 </li>
                 <li>
-                    <strong><a href="recrutamento.html">Junte-se à Causa:</a></strong> Preencha o formulário e descubra em qual facção suas habilidades se encaixam.
+                    <b><a href="../pages/recrutamento.html">Junte-se à Causa:</a></b> Preencha o formulário e descubra em qual facção suas habilidades se encaixam.
                 </li>
             </ul>
         </section>
@@ -130,7 +132,8 @@
         <hr>
 
         <!-- Informações Adicionais -->
-         <h3>Nota dos Arquivistas</h3>
+         <aside>
+        <h2>Nota dos Arquivistas</h2>
         <details>
             <summary>O que é BBY e ABY?</summary>
             <p><b>BBY (Before the Battle of Yavin)</b> significa "Antes da Batalha de Yavin" e <b>ABY (After the Battle of Yavin)</b> significa "Depois da Batalha de Yavin".  
@@ -143,6 +146,7 @@
             <p><b>Yavin</b> é um gigante planeta gasoso vermelho do universo Star Wars, localizado na Orla Exterior (setor Gordian Reach).  
             Ele é o planeta em torno do qual orbita a lua Yavin 4, onde ficava a base da Aliança Rebelde.</p>
         </details>
+        </aside>
     </main>
 
     <hr>
@@ -152,6 +156,5 @@
         <p><small>&copy; Arquivos da Galáxia — Projeto de Ian Falcão.</small></p>
         <p><small><a href="#top">Voltar ao topo da página</a></small></p>
     </footer>
-    </main>
 </body>
 </html>
