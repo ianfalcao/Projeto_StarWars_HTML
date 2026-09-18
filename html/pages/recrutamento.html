@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ian Falcão">
+    <meta name="description" content="Preencha uma ficha fictícia para explorar os campos de um formulário HTML.">
+    <title>Aliste-se — Arquivos da Galáxia</title>
+</head>
+<body>
+    <header>
+        <h1>Aliste-se a Star Wars </h1>
+        <blockquote>
+            <p>"Suas escolhas definem quem você é, muito mais do que suas habilidades."</p>
+            <cite>Mestre Yoda</cite>
+        </blockquote>
+    </header>
+    <nav>
+        <h2>Navegação Galática</h2>
+        <ul>
+            <li><a href="../main/index.html">01. Início</a></li>
+            <li><a href="../pages/cronologia.html">02. Cronologia</a></li>
+            <li><a href="../pages/jedi.html">03. Ordem Jedi</a></li>
+            <li><a href="../pages/sith.html">04. Registros Sith</a></li>
+            <li><a href="../pages/naves.html">05. Naves e Veículos</a></li>
+            <li><a href="../pages/planetas.html">06. Guia Planetário</a></li>
+            <li><a href="../pages/faccoes.html">07. Facções</a></li>
+            <li><a href="../pages/midias.html">08. Guia de Mídias</a></li>
+            <li><a href="../pages/cacadores_rec.html">09. Guia de Caçadores</a></li>
+            <li><a href="../pages/recrutamento.html"><b>10. Aliste-se</b></a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <main>
+        <section>
+            <h2>Uma nova missão</h2>
+            <article>
+                <h3>Ficha de visitante</h3>
+                <p>Escolha suas preferências para uma aventura pela galáxia.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Ficha de recrutamento</h2>
+            <p>Os campos identificados como obrigatórios precisam ser preenchidos para validar a ficha.</p>
+            <form>
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <p><label for="nome">Nome do personagem (obrigatório):</label>
+                        <input type="text" placeholder="Ex.: Ari Sol" required></p>
+
+                    <p><label>Data da missão (obrigatória):</label>
+                        <input type="date" name="data" required></p>
+
+                    <p><label>Planeta de origem:</label>
+                        <input list="planetas" placeholder="Escolha ou digite um planeta"></p>
+
+                    <datalist id="planetas">
+                        <option value="Tatooine"></option>
+                        <option value="Naboo"></option>
+                        <option value="Coruscant"></option>
+                        <option value="Kashyyyk"></option>
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências da missão</legend>
+                    <p><label >Facção favorita:</label>
+                    <input list="faccao" name="Facção" placeholder="Escolha sua Facção Favorita"></p>
+                    <datalist id="faccao">
+                        <option value="Aliança Rebelde"></option>
+                        <option value="República Galáctica"></option>
+                        <option value="Império Galáctico"></option>
+                        <option value="Resistência"></option>
+                    </datalist>
+                    
+
+                    <p><label>Cor do sabre:</label>
+                        <input type="color" name="cor"></p>
+                    <p><label>Experiência de pilotagem (0: iniciante; 10: experiente):</label>
+                        <input type="range" name="experiencia" min="0" max="10" value="0"></p>
+                    <p><label>Habilidades do personagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="4" cols="40" placeholder="Conte quais habilidades seu personagem possui."></textarea></p>
+                </fieldset>
+                <p>Envie sua ficha para finalizar.</p>
+                <button type="submit">Validar ficha</button>
+                <figure>
+                    <img src="/img/gifs/anakin GIF.gif" alt="Anakin Gif" width="250" height="250">
+                    <figcaption></figcaption>
+                </figure>
+            </form>
+        </section>
+        <aside>
+            <h2>Nota dos Arquivistas</h2>
+            <p>Conheça as <a href="faccoes.html">facções</a> antes de escolher.</p>
+        </aside>
+    </main>
+    <hr>
+    <footer>
+        <p><small>&copf; Arquivos da Galáxia — Projeto de Ian Falcão.</small></p>
+        <p><small><a href="#top">Voltar ao topo da página</a></small></p>
+    </footer>
+</body>
+</html>
